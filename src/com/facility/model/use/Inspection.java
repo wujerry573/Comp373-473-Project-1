@@ -1,4 +1,6 @@
-package com.facility.model;
+package com.facility.model.use;
+
+import com.facility.model.InspectionType;
 
 public class Inspection {
 
@@ -6,8 +8,9 @@ public class Inspection {
     private String facility;
     private String date;
     private InspectionType type;
+    private UseSchedule useSchedule;
 
-    public Inspection() {};
+    public Inspection(UseSchedule useSchedule) {};
 
     public String getInspectionId() {
         return inspectionId;
