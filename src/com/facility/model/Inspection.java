@@ -1,4 +1,4 @@
-package com.facility.model.facility;
+package com.facility.model;
 
 public class Inspection {
 

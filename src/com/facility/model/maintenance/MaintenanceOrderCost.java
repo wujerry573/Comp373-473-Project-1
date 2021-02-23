@@ -1,4 +1,4 @@
-package com.facility.model.facility.maintenance;
+package com.facility.model.maintenance;
 
 public class MaintenanceOrderCost {
 
