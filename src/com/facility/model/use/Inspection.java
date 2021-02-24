@@ -1,7 +1,5 @@
 package com.facility.model.use;
 
-import com.facility.model.InspectionType;
-
 public class Inspection {
 
     private String inspectionId;
@@ -42,5 +40,16 @@ public class Inspection {
 
     public void setType(InspectionType type) {
         this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "Inspection{" +
+                "inspectionId='" + inspectionId + '\'' +
+                ", facility='" + facility + '\'' +
+                ", date='" + date + '\'' +
+                ", type=" + type +
+                ", useSchedule=" + useSchedule +
+                '}';
     }
 }

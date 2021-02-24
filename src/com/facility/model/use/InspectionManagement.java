@@ -13,7 +13,7 @@ public class InspectionManagement {
     public void setInspectionList(ArrayList<Inspection>inspectionList){
        this.inspectionList = inspectionList;
     }
-    public void addInspection(Inspection inspection){ inspectionList.add(inspection)}
+    public void addInspection(Inspection inspection){ inspectionList.add(inspection);}
 
     public void listInspections(){
         for (Inspection inspect: inspectionList){
