@@ -1,4 +1,4 @@
-package com.facility.model;
+package com.facility.model.facility;
 
 import java.util.List;
 

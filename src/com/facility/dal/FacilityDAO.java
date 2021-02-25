@@ -7,8 +7,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import com.facility.model.Facility;
-import com.facility.model.FacilityLocation;
+import com.facility.model.facility.Facility;
+import com.facility.model.facility.FacilityLocation;
 
 public class FacilityDAO {
 
