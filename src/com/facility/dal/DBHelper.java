@@ -23,7 +23,7 @@ public class DBHelper {
         Connection connection = null;
         try {
             //need to update url, user, and password to correct values once database is implemented
-            connection = DriverManager.getConnection("jdbc:postgresql://127.0.0.1:5432/BookStore", "student", "Comp442");
+            connection = DriverManager.getConnection("jdbc:postgresql://127.0.0.1:5432/Facility", "", "");
             Statement st = connection.createStatement();
             ResultSet rs = st.executeQuery("SELECT VERSION()");
 

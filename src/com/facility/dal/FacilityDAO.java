@@ -34,7 +34,7 @@ public class FacilityDAO {
             //close to manage resources
             facilRS.close();
 
-            //Get Address
+            //Get FacilityLocation
             String selectAddressQuery = "SELECT locationID, street, unit, city, state, zip FROM FacilityLocation WHERE locationId = '" + facilityId + "'";
             ResultSet locatRS = st.executeQuery(selectAddressQuery);
             FacilityLocation location = new FacilityLocation();

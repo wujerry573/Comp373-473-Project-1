@@ -1,17 +1,26 @@
 package com.facility.model.maintenance;
 
-import java.util.List;
+import java.util.Date;
 
 public class Schedule {
 
-    private List<Maintenance> schedule;
+    private int scheduleId;
+
+    private String scheduleContents;
+
+    private Date date;
 
     public Schedule() {};
 
-    public List<Maintenance> listSchedule() {return schedule;}
+    public int getScheduleId() {return scheduleId;}
 
-    public void scheduleMaintenance(Maintenance maintenance) {schedule.add(maintenance);}
+    public void setScheduleId(int scheduleId) {this.scheduleId = scheduleId;}
 
-    public void cancelMaintenance(Maintenance maintenance) {schedule.remove(maintenance);}
+    public String getScheduleContents() {return scheduleContents;}
 
+    public void setScheduleContents(String scheduleContents) {this.scheduleContents = scheduleContents;}
+
+    public Date getDate() {return date;}
+
+    public void setDate(Date date) {this.date = date;}
 }
