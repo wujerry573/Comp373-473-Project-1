@@ -1,9 +1,14 @@
 package com.facility.model.facility;
 
+<<<<<<< HEAD
 import com.facility.model.facility.FacilityDetail;
 import com.facility.model.use.Inspection;
 
 import java.util.ArrayList;
+=======
+import com.facility.model.use.Inspection;
+
+>>>>>>> b3a9272902205bbbe5b997c7d17af5c65e14e5d5
 import java.util.List;
 
 public class Facility {
