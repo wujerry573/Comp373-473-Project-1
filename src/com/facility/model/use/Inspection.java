@@ -1,14 +1,18 @@
 package com.facility.model.use;
 
+import com.facility.model.facility.Facility;
+
 public class Inspection {
 
     private String inspectionId;
-    private String facility;
+    private Facility facility;
     private String date;
     private InspectionType type;
     private UseSchedule useSchedule;
 
-    public Inspection(UseSchedule useSchedule) {};
+    public Inspection(UseSchedule useSchedule) {
+        this.useSchedule = useSchedule;
+    };
 
     public String getInspectionId() {
         return inspectionId;
@@ -18,11 +22,11 @@ public class Inspection {
         this.inspectionId = inspectionId;
     }
 
-    public String getFacility() {
+    public Facility getFacility() {
         return facility;
     }
 
-    public void setFacility(String facility) {
+    public void setFacility(Facility facility) {
         this.facility = facility;
     }
 
@@ -46,10 +50,10 @@ public class Inspection {
     public String toString() {
         return "Inspection{" +
                 "inspectionId='" + inspectionId + '\'' +
-                ", facility='" + facility + '\'' +
+                ", facility='" + facility.getFacilityId() + '\'' +
                 ", date='" + date + '\'' +
-                ", type=" + type +
-                ", useSchedule=" + useSchedule +
+                ", type='" + type.getInspectionTypeId() + '\'' +
+                ", useSchedule='" + useSchedule.getScheduleId() + '\'' +
                 '}';
     }
 }

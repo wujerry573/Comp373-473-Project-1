@@ -14,7 +14,7 @@ public class UseSchedule {
 
     public String getScheduleId(){ return scheduleId; }
 
-    public void setScheduleId(){String scheduleId;}
+    public void setScheduleId(String scheduleId){ this.scheduleId = scheduleId;}
 
     public String getUnitId(){ return unitId;}
 
