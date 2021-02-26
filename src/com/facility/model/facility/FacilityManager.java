@@ -26,4 +26,6 @@ public class FacilityManager {
         facilities.remove(facility);
     }
 
+    public int requestAvailableCapacity(Facility facility) { return facility.requestAvailableCapacity(); }
+
 }
