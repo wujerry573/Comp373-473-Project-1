@@ -1,8 +1,9 @@
 package com.facility.model.facility;
 
-import com.facility.model.FacilityDetail;
+import com.facility.model.facility.FacilityDetail;
 import com.facility.model.use.Inspection;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Facility {
@@ -14,7 +15,10 @@ public class Facility {
     private List<Inspection> inspections;
     private FacilityLocation location;
 
-    public Facility() {};
+    public Facility() {
+        details = new ArrayList<FacilityDetail>();
+        inspections = new ArrayList<Inspection>();
+    };
 
     // getters and setters
     public String getFacilityId() {
