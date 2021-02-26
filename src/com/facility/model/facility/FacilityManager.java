@@ -1,5 +1,7 @@
 package com.facility.model;
 
+import com.facility.model.facility.Facility;
+
 import java.util.List;
 
 public class FacilityManager {
@@ -19,4 +21,5 @@ public class FacilityManager {
     public void removeFacility(Facility facility){
         facilities.remove(facility);
     }
+
 }
