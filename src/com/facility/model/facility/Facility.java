@@ -1,5 +1,8 @@
 package com.facility.model.facility;
 
+import com.facility.model.FacilityDetail;
+import com.facility.model.use.Inspection;
+
 import java.util.List;
 
 public class Facility {

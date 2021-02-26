@@ -1,7 +1,7 @@
 package com.facility.model.use;
 
-import com.facility.model.Facility;
-import com.facility.model.FacilityLocation;
+import com.facility.model.facility.Facility;
+import com.facility.model.facility.FacilityLocation;
 
 import java.util.ArrayList;
 import java.util.Calendar;

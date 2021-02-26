@@ -1,4 +1,6 @@
-package com.facility.model;
+package com.facility.model.facility;
+
+import com.facility.model.facility.Facility;
 
 import java.util.List;
 
