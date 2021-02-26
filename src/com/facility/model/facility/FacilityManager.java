@@ -2,13 +2,16 @@ package com.facility.model.facility;
 
 import com.facility.model.facility.Facility;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class FacilityManager {
 
     private List<Facility> facilities;
 
-    public FacilityManager() {};
+    public FacilityManager() {
+        facilities = new ArrayList<Facility>();
+    };
 
     public List<Facility> listFacilities() {
         return facilities;
