@@ -3,6 +3,7 @@ package com.facility.model.facility;
 
 import com.facility.model.facility.FacilityDetail;
 import com.facility.model.use.Inspection;
+import com.facility.model.maintenance.Maintenance;
 
 import java.util.ArrayList;
 
@@ -19,6 +20,7 @@ public class Facility {
     private List<FacilityDetail> details;
     private List<Inspection> inspections;
     private FacilityLocation location;
+    private Maintenance maintenance;
 
     public Facility() {
         details = new ArrayList<FacilityDetail>();
@@ -79,6 +81,22 @@ public class Facility {
         return details;
     }
 
+    public List<Inspection> getInspections() {
+        return inspections;
+    }
+
+    public void setInspections(List<Inspection> inspections) {
+        this.inspections = inspections;
+    }
+
+    public Maintenance getMaintenance() {
+        return maintenance;
+    }
+
+    public void setMaintenance(Maintenance maintenance) {
+        this.maintenance = maintenance;
+    }
+
     public void addFacilityDetail(FacilityDetail detail) {
         details.add(detail);
     }
@@ -89,6 +107,10 @@ public class Facility {
 
     public List<Inspection> listInspections() {
         return inspections;
+    }
+
+    public String listFacilityProblems() {
+        return maintenance.listMaintenanceLogs().toString();
     }
 
 
