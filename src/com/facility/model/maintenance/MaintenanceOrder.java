@@ -4,6 +4,7 @@ public class MaintenanceOrder {
 
     private int maintenanceOrderId;
     private String description;
+    private int cost;
 
     public MaintenanceOrder() {};
 
@@ -14,4 +15,8 @@ public class MaintenanceOrder {
     public String getDescription() {return description;}
 
     public void setDescription(String description) {this.description = description;}
+
+    public int getCost() {return cost;}
+
+    public void setCost(int cost) {this.cost = cost;}
 }

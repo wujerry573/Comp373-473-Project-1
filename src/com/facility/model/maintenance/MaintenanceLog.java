@@ -4,22 +4,17 @@ import java.util.List;
 
 public class MaintenanceLog {
 
-    private List<Maintenance> maintenanceLogs;
+    private int maintenanceLogId;
 
-    private List<Maintenance> maintenanceRequests;
+    private String log;
 
     public MaintenanceLog() {};
 
-    public List<Maintenance> listMaintLogs() {return maintenanceLogs;}
+    public int getMaintenanceLogId() {return maintenanceLogId;}
 
-    public List<Maintenance> listMaintRequests() {return maintenanceRequests;}
+    public void setMaintenanceLogId(int maintenanceLogId) {this.maintenanceLogId = maintenanceLogId;}
 
-    public void addMaintLog(Maintenance maintenance) {maintenanceLogs.add(maintenance);}
+    public String getLog() {return log;}
 
-    public void removeMaintLog(Maintenance maintenance) {maintenanceLogs.remove(maintenance);}
-
-    public void addMaintRequest(Maintenance maintenance) {maintenanceRequests.add(maintenance);}
-
-    public void removeMaintRequest(Maintenance maintenance) {maintenanceRequests.remove(maintenance);}
-
+    public void setLog(String log) {this.log = log;}
 }
