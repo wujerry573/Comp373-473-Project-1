@@ -1,6 +1,7 @@
 package com.facility.model.maintenance;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Maintenance {
@@ -55,4 +56,16 @@ public class Maintenance {
         return maintenanceRequestList.size() / maintenanceOrderList.size();
     }
 
+    public void makeFacilityMaintRequest(MaintenanceRequest req) {
+        this.addMaintenanceRequest(req);
+    }
+
+    public List<MaintenanceLog> listMaintenance() {
+        return listMaintenanceLogs();
+    }
+
+    public void scheduleMaintenance(Date date, String scheduleContents) {
+        schedule.setDate(date);
+        schedule.setScheduleContents(scheduleContents);
+    }
 }
