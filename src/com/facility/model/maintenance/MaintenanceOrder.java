@@ -1,6 +1,6 @@
 package com.facility.model.maintenance;
 
-public class MaintenanceOrder {
+public class MaintenanceOrder implements MaintenanceOrderInterface {
 
     private int maintenanceOrderId;
     private String description;

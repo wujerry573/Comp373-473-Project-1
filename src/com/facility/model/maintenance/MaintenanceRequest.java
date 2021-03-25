@@ -1,6 +1,6 @@
 package com.facility.model.maintenance;
 
-public class MaintenanceRequest {
+public class MaintenanceRequest implements MaintenanceRequestInterface {
 
     private String maintenanceRequest;
     private int maintenceRequestId;
