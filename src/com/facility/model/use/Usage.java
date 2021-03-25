@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
-public class Usage {
+public class Usage implements UsageInterface{
     private int maxCapacity;
     private int reservationSize;
     private Facility facility;

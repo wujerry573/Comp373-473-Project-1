@@ -2,7 +2,7 @@ package com.facility.model.use;
 import java.util.ArrayList;
 import java.util.List;
 
-public class InspectionManagement {
+public class InspectionManagement implements InspectionManagementInterface {
     public InspectionManagement (){
 
     }

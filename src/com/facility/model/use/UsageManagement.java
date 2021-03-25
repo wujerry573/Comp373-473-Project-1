@@ -3,7 +3,7 @@ package com.facility.model.use;
 
 import java.util.ArrayList;
 
-public class UsageManagement {
+public class UsageManagement implements UsageManagementInterface{
     public UsageManagement(){
 
     }
