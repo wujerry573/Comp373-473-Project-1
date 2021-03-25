@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 import java.util.List;
 
-public class FacilityManager {
+public class FacilityManager implements FacilityManagerInterface {
 
     private List<Facility> facilities;
 

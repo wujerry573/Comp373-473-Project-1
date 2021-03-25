@@ -12,7 +12,7 @@ import com.facility.model.use.Inspection;
 
 import java.util.List;
 
-public class Facility {
+public class Facility implements FacilityInterface {
 
     private String facilityId;
     private int availableCapacity;
