@@ -2,15 +2,15 @@ package com.facility.model.maintenance;
 
 public class MaintenanceOrder implements MaintenanceOrderInterface {
 
-    private int maintenanceOrderId;
+    private String maintenanceOrderId;
     private String description;
     private int cost;
 
     public MaintenanceOrder() {};
 
-    public int getMaintenanceOrderId() {return maintenanceOrderId;}
+    public String getMaintenanceOrderId() {return maintenanceOrderId;}
 
-    public void setMaintenanceOrderId(int maintenanceOrderId) {this.maintenanceOrderId = maintenanceOrderId;}
+    public void setMaintenanceOrderId(String maintenanceOrderId) {this.maintenanceOrderId = maintenanceOrderId;}
 
     public String getDescription() {return description;}
 

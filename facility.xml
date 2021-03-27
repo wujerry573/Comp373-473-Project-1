@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="11.0.8" class="java.beans.XMLDecoder">
+ <object class="com.facility.model.facility.Facility" id="Facility0">
+  <void property="availableCapacity">
+   <int>100</int>
+  </void>
+  <void property="details">
+   <void method="add">
+    <object class="com.facility.model.facility.FacilityDetail">
+     <void property="description">
+      <string>Loyola University Lake Shore campus wellness center location. </string>
+     </void>
+     <void property="facilityDetailId">
+      <string>Granada Center</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="facilityId">
+   <string>1</string>
+  </void>
+  <void property="location">
+   <object class="com.facility.model.facility.FacilityLocation">
+    <void property="city">
+     <string>Chicago</string>
+    </void>
+    <void property="locationId">
+     <string>1</string>
+    </void>
+    <void property="state">
+     <string>IL</string>
+    </void>
+    <void property="street">
+     <string>6439 N Sheridan Rd</string>
+    </void>
+    <void property="unit">
+     <string>Suite 310</string>
+    </void>
+    <void property="zip">
+     <string>60626</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

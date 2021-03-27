@@ -11,6 +11,10 @@
 <!--    Facility module beans-->
     <bean id="facilityLocation" class="com.facility.model.facility.FacilityLocation" scope="prototype"/>
     <bean id="facilityDetail" class="com.facility.model.facility.FacilityDetail" scope="prototype"/>
+    <bean id="maintenanceOrder" class="com.facility.model.maintenance.MaintenanceOrder" scope="prototype"/>
+    <bean id="maintenanceRequest" class="com.facility.model.maintenance.MaintenanceRequest" scope="prototype"/>
+    <bean id="maintenance" class="com.facility.model.maintenance.Maintenance" scope="prototype"/>
+
 
     <bean id="facility" class="com.facility.model.facility.Facility" scope="prototype">
         <property name="location" ref="facilityLocation" />
@@ -19,8 +23,9 @@
                 <ref bean="facilityDetail" />
             </list>
         </property>
+        <property name="maintenance" ref="maintenance" />
 
-<!--        TODO add management, inspection, maintenance properties-->
+<!--        TODO add management, inspection properties-->
     </bean>
 
 </beans>

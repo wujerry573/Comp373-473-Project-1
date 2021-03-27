@@ -3,7 +3,7 @@ package com.facility.model.maintenance;
 public class MaintenanceRequest implements MaintenanceRequestInterface {
 
     private String maintenanceRequest;
-    private int maintenceRequestId;
+    private String maintenanceRequestId;
 
     public MaintenanceRequest() {};
 
@@ -11,8 +11,8 @@ public class MaintenanceRequest implements MaintenanceRequestInterface {
 
     public void setMaintenanceRequest(String maintenanceRequest) {this.maintenanceRequest = maintenanceRequest;}
 
-    public int getMaintenceRequestId() {return maintenceRequestId;}
+    public String getMaintenanceRequestId() {return maintenanceRequestId;}
 
-    public void setMaintenceRequestId(int maintenceRequestId) {this.maintenceRequestId = maintenceRequestId;}
+    public void setMaintenanceRequestId(String maintenanceRequestId) {this.maintenanceRequestId = maintenanceRequestId;}
 
 }
