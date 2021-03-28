@@ -26,13 +26,21 @@ requests; calculating down time of a facility and many more functionalities.
 
 Instructions:
 1. Install the following libraries:
+   
    commons-io-2.8.0.jar
+   
    commons-logging-1.2.jar
+   
    spring-aop-4.0.5.RELEASE.jar
+   
    spring-beans-4.0.5.RELEASE.jar
+   
    spring-context-4.0.5.RELEASE.jar
+   
    spring-core-4.0.5.RELEASE.jar
+   
    spring-expression-4.0.5.RELEASE.jar
+   
 2. Enter src folder
 3. Next go in com folder
 4. Then enter facility folder
