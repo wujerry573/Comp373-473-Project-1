@@ -113,6 +113,4 @@ public class Facility implements FacilityInterface {
         return maintenance.listMaintenanceLogs().toString();
     }
 
-
-
 }

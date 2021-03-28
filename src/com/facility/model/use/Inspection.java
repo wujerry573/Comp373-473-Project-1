@@ -10,9 +10,15 @@ public class Inspection {
     private InspectionType type;
     private UseSchedule useSchedule;
 
+    public Inspection() {};
+
     public Inspection(UseSchedule useSchedule) {
         this.useSchedule = useSchedule;
     };
+
+    public void setUseSchedule(UseSchedule useSchedule){this.useSchedule = useSchedule;}
+
+    public UseSchedule getUseSchedule(){return this.useSchedule;}
 
     public String getInspectionId() {
         return inspectionId;
@@ -48,7 +54,7 @@ public class Inspection {
 
     @Override
     public String toString() {
-        return "Inspection{" +
+        return "\t\t Inspection: {" +
                 "inspectionId='" + inspectionId + '\'' +
                 ", facility='" + facility.getFacilityId() + '\'' +
                 ", date='" + date + '\'' +

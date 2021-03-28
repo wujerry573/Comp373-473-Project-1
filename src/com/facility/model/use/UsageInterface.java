@@ -9,13 +9,15 @@ import java.util.Date;
 
 public interface UsageInterface {
 
+    public void setFacility(Facility facility);
+
     public Facility getFacility();
 
     public int getMaxCapacity();
 
     public int getReservationSize();
 
-    public void setReservationSize();
+    public void setReservationSize(int size);
 
     public boolean isInUseDuringInterval(Date date, int duration);
 

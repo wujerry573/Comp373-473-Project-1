@@ -17,19 +17,23 @@ public class Usage implements UsageInterface{
     private FacilityUser facilityUser;
     private UseSchedule useSchedule;
 
+    public Usage() {};
+
     public Usage(Facility specFacility){
         this.facility = specFacility;
         this.maxCapacity = specFacility.getMaxCapacity();
         this.location = specFacility.getLocation();
     }
 
+    public void setFacility(Facility facility) {this.facility = facility;}
+
     public Facility getFacility(){ return facility;}
 
-    public int getMaxCapacity(){ return maxCapacity;}
+    public int getMaxCapacity(){ return this.facility.getMaxCapacity();}
 
     public int getReservationSize(){return reservationSize;}
 
-    public void setReservationSize(){this.reservationSize = reservationSize;}
+    public void setReservationSize(int reservationSize){this.reservationSize = reservationSize;}
 
     public boolean isInUseDuringInterval(Date date, int duration){
         Date startTime = useSchedule.getStartDateTime();
@@ -65,6 +69,15 @@ public class Usage implements UsageInterface{
     public String calcUsageRate(){
         double useOfCapacity = reservationSize / maxCapacity;
         return "Usage Rate: " + (useOfCapacity * 100) + "%";
+    }
+
+    @Override
+    public String toString(){
+        return "\t\t Usages: {" +
+                "Max Capacity ='" + facility.getMaxCapacity() + '\'' +
+                ", facility='" + facility.getFacilityId() + '\'' +
+                ", Reservation Size ='" + reservationSize + '\'' +
+                '}';
     }
 
 }

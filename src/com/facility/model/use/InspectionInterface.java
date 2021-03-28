@@ -2,62 +2,26 @@ package com.facility.model.use;
 
 import com.facility.model.facility.Facility;
 
-public class Inspection {
+public interface InspectionInterface {
 
-    private String inspectionId;
-    private Facility facility;
-    private String date;
-    private InspectionType type;
-    private UseSchedule useSchedule;
+    public void setUseSchedule(UseSchedule useSchedule);
 
-    public Inspection() {};
+    public UseSchedule getUseSchedule();
 
-    public Inspection(UseSchedule useSchedule) {
-        this.useSchedule = useSchedule;
-    };
+    public String getInspectionId();
 
-    public void setUseSchedule(UseSchedule useSchedule){this.useSchedule = useSchedule;}
+    public void setInspectionId(String inspectionId);
 
-    public String getInspectionId() {
-        return inspectionId;
-    }
+    public Facility getFacility();
 
-    public void setInspectionId(String inspectionId) {
-        this.inspectionId = inspectionId;
-    }
+    public void setFacility(Facility facility);
 
-    public Facility getFacility() {
-        return facility;
-    }
+    public String getDate();
 
-    public void setFacility(Facility facility) {
-        this.facility = facility;
-    }
+    public void setDate(String date);
 
-    public String getDate() {
-        return date;
-    }
+    public InspectionType getType();
 
-    public void setDate(String date) {
-        this.date = date;
-    }
+    public void setType(InspectionType type);
 
-    public InspectionType getType() {
-        return type;
-    }
-
-    public void setType(InspectionType type) {
-        this.type = type;
-    }
-
-    @Override
-    public String toString() {
-        return "Inspection{" +
-                "inspectionId='" + inspectionId + '\'' +
-                ", facility='" + facility.getFacilityId() + '\'' +
-                ", date='" + date + '\'' +
-                ", type='" + type.getInspectionTypeId() + '\'' +
-                ", useSchedule='" + useSchedule.getScheduleId() + '\'' +
-                '}';
-    }
 }

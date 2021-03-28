@@ -14,18 +14,12 @@
     <bean id="maintenanceOrder" class="com.facility.model.maintenance.MaintenanceOrder" scope="prototype"/>
     <bean id="maintenanceRequest" class="com.facility.model.maintenance.MaintenanceRequest" scope="prototype"/>
     <bean id="maintenance" class="com.facility.model.maintenance.Maintenance" scope="prototype"/>
-
-
-    <bean id="facility" class="com.facility.model.facility.Facility" scope="prototype">
-        <property name="location" ref="facilityLocation" />
-        <property name="details">
-            <list>
-                <ref bean="facilityDetail" />
-            </list>
-        </property>
-        <property name="maintenance" ref="maintenance" />
-
-<!--        TODO add management, inspection properties-->
-    </bean>
+    <bean id="usage" class="com.facility.model.use.Usage" scope="prototype"/>
+    <bean id="inspection" class="com.facility.model.use.Inspection" scope="prototype"/>
+    <bean id="inspectionType" class="com.facility.model.use.InspectionType" scope="prototype"/>
+    <bean id="useSchedule" class="com.facility.model.use.UseSchedule" scope="prototype"/>
+    <bean id="usageManagement" class="com.facility.model.use.UsageManagement" scope="prototype"/>
+    <bean id="inspectionManagement" class="com.facility.model.use.InspectionManagement" scope="prototype"/>
+    <bean id="facility" class="com.facility.model.facility.Facility" scope="prototype"/>
 
 </beans>

@@ -18,7 +18,7 @@ public class UseSchedule {
 
     public String getUnitId(){ return unitId;}
 
-    public void setUnitId(){ String unitId;}
+    public void setUnitId(String unitId){this.unitId = unitId;}
 
     public Date getStartDateTime(){return startDateTime;}
 
@@ -30,6 +30,6 @@ public class UseSchedule {
 
     public String getUserId(){ return userId;}
 
-    public void setUserId(){ String userId;}
+    public void setUserId(String userId){ this.userId = userId;}
 
 }
